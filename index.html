@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Manicura Barbara</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="icon" type="text/css" href="icono.ico">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+
+	<script type='text/javascript'>
+		//<![CDATA[
+		  var nW,nH,oH,oW;
+		  function zoomToggle(iWideSmall,iHighSmall,iWideLarge,iHighLarge,whichImage){
+			oW=whichImage.style.width;oH=whichImage.style.height;
+			if((oW==iWideLarge)||(oH==iHighLarge)){
+			  nW=iWideSmall;nH=iHighSmall;
+			}else{
+			  nW=iWideLarge;nH=iHighLarge;
+			}
+			whichImage.style.width=nW;whichImage.style.height=nH;
+		  }
+		//]]>
+		</script>
+
+</head>
+
+<body>
+<header>
+	<nav class="nav">
+		<ul class="nav__ul">
+			<li class="nav__li"><i class="fas fa-home"></i><a href="index.html"> Inicio</a></li>
+			<li class="nav__li"><i class="fas fa-info"></i><a href="sobre-nosotros.html"> Sobre nosotros</a></li>
+			<li class="nav__li"><i class="fas fa-phone"></i><a href="contacto.html"> Pide tu cita</a></li>
+		</ul>
+	</nav>
+
+	<nav class="nav-responsive">
+		<ul class="nav-responsive-ul">
+			<li class="nav-responsive-li"><i class="fas fa-bars"></i></li>
+		</ul>
+		<ul class="nav-container">
+			<li class="nav__li-responsive"><i class="fas fa-home"></i><a href="index.html"> Inicio</a></li>
+			<li class="nav__li-responsive"><i class="fas fa-info"></i><a href="sobre-nosotros.html"> Sobre nosotros</a></li>
+			<li class="nav__li-responsive"><i class="fas fa-phone"></i><a href="contacto.html"> Pide tu cita</a></li>
+		</ul>
+	</nav>
+
+	<h4>Manicura Barbara</h4>
+	<div class="container">
+		<img id="foto1" src="foto1.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto2" src="foto2.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto3" src="foto3.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto4" src="foto4.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto5" src="foto5.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto6" src="foto6.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto7" src="foto7.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto8" src="foto8.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto9" src="foto9.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto10" src="foto10.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto11" src="foto11.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+		<img id="foto12" src="foto12.png" width="200px" height="200px" onclick="zoomToggle('200px','200px','300px','300px',this);">
+
+	</div>
+</header>
+<hr>
+<footer>
+	<li class="nav__sub"><i class="fas fa-home"></i><a href="index.html"> Subir</a></li>
+</footer>
+</body>
+</html>
